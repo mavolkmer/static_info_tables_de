@@ -3,12 +3,16 @@
 	"type": "typo3-cms-extension",
 	"description": "German (de) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
 	"license": "GPL-2.0-or-later",
-	"repositories": [
-		{
+	"repositories": {
+		"static-info-tables": {
+			"type": "vcs",
+			"url": "https://codeberg.org/mvoehringer/static-info-tables"
+		},
+		"typo3": {
 			"type": "composer",
 			"url": "https://composer.typo3.org"
 		}
-	],
+	},
 	"keywords": [
 		"TYPO3 CMS",
 		"Static Info Tables"
@@ -30,20 +34,11 @@
 	"require": {
 		"php": "^7.2",
 		"typo3/cms-core": "^10.4 || ^11.5",
-		"sjbr/static-info-tables": "^6.7"
-	},
-	"require-dev": {
-		"rector/rector": "^0.11.59"
+		"sjbr/static-info-tables": "dev-TYPO3-11"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "static_info_tables_de",
-			"app-dir": ".Build",
-			"web-dir": ".Build/public"
+			"extension-key": "static_info_tables_de"
 		}
-	},
-	"config": {
-		"vendor-dir": ".Build/vendor",
-		"bin-dir": ".Build/bin"
 	}
 }

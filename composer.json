@@ -1,40 +1,49 @@
 {
-  "name": "jambagecom/static-info-tables-de",
-  "type": "typo3-cms-extension",
-  "description": "German (de) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
-  "license": "GPL-2.0-or-later",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.typo3.org"
-    }
-  ],
-  "keywords": [
-    "TYPO3 CMS",
-    "Static Info Tables"
-  ],
-  "support": {
-    "issues": "https://github.com/franzholz/static_info_tables_de/issues"
-  },
-  "homepage": "https://jambage.com",
-  "authors": [
-    {
-      "name": "Franz Holzinger",
-      "role": "Developer",
-      "homepage": "https://ttproducts.de"
-    }
-  ],
-  "replace": {
-    "jambagecom/static-info-tables-de": "self.version"
-  },
-  "require": {
-    "php": "^7.2",
-    "typo3/cms-core": "^8.7 || ^9.5 || ^10.4",
-    "sjbr/static-info-tables": "^6.7"
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "static_info_tables_de"
-    }
-  }
+	"name": "jambagecom/static-info-tables-de",
+	"type": "typo3-cms-extension",
+	"description": "German (de) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
+	"license": "GPL-2.0-or-later",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org"
+		}
+	],
+	"keywords": [
+		"TYPO3 CMS",
+		"Static Info Tables"
+	],
+	"support": {
+		"issues": "https://github.com/franzholz/static_info_tables_de/issues"
+	},
+	"homepage": "https://jambage.com",
+	"authors": [
+		{
+			"name": "Franz Holzinger",
+			"role": "Developer",
+			"homepage": "https://ttproducts.de"
+		}
+	],
+	"replace": {
+		"jambagecom/static-info-tables-de": "self.version"
+	},
+	"require": {
+		"php": "^7.2",
+		"typo3/cms-core": "^10.4 || ^11.5",
+		"sjbr/static-info-tables": "^6.7"
+	},
+	"require-dev": {
+		"rector/rector": "^0.11.59"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "static_info_tables_de",
+			"app-dir": ".Build",
+			"web-dir": ".Build/public"
+		}
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	}
 }

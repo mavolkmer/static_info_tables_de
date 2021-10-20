@@ -6,15 +6,13 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'misc',
     'version' => '6.7.8',
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearcacheonload' => 1,
+    'clearCacheOnLoad' => true,
     'author' => 'Franz Holzinger',
     'author_email' => 'franz@ttproducts.de',
     'author_company' => 'jambage.com',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-10.4.99',
+            'typo3' => '10.4.11-11.5.99',
             'static_info_tables' => '6.7.3-6.99.99',
         ],
         'conflicts' => [

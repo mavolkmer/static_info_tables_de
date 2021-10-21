@@ -7,10 +7,6 @@
 		"static-info-tables": {
 			"type": "vcs",
 			"url": "https://codeberg.org/mvoehringer/static-info-tables"
-		},
-		"typo3": {
-			"type": "composer",
-			"url": "https://composer.typo3.org"
 		}
 	},
 	"keywords": [
